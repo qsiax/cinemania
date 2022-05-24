@@ -1,0 +1,64 @@
+.header {
+    position: relative;
+    z-index: 100;
+    &.active {
+        .header__profile {
+            color: $main-color;
+        }
+        .header__logo {
+            background: url(/img/logo-white.svg);
+            @include background;
+        }
+    }
+    &__body {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 15px;
+    }
+
+    &__container {
+    }
+
+    &__block {
+        display: flex;
+        align-items: center;
+    }
+
+    &__logo {
+        width: 38px;
+        height: 44px;
+        background: url(/img/logo-main.svg);
+        @include background;
+        transition: .3s ease;
+    }
+
+    &__profile {
+        font-size: 23px;
+        margin-right: 22px;
+        transition: .3s ease;
+    }
+
+    &__burger {
+        width: 24px;
+        height: 16px;
+        transition: .3s ease;
+    }
+
+    &__close {
+        display: none;
+        font-size: 19px;
+        transition: .3s ease;
+        margin-left: 5px;
+    }
+
+    &__btn {
+        &.active > .header__close {
+            display: block;
+            transform: rotate(90deg);
+        }
+        &.active > .header__burger {
+            display: none;
+        }
+    }
+}

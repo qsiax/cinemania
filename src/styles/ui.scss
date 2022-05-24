@@ -1,0 +1,23 @@
+$main-color: #F4F4F8;
+$primary-color: #FF724C;
+$secondary-color: #92929D;
+$tertiary-color: #473936;
+$text: #2A2C41;
+$text-secondary: #92929D;;
+$error: #ED0A34;
+$succes: #0284C7;
+$transition: all .5s ease;
+
+@mixin background {
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.heading {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 31px;
+    text-transform: uppercase; 
+}
+

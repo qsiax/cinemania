@@ -1,0 +1,70 @@
+.soon {
+
+    &_heading {
+        margin-top: 25px;
+    }
+
+    &__container {
+    }
+
+    &__body {
+    }
+
+    &__block {
+        &:first-child {
+            margin-bottom: 16px;
+        }
+    }
+
+    &__slider {
+    }
+
+    &__slider-wrapper {
+    }
+
+    &__slide {
+        height: 231px;
+        width: 135px;
+        border-radius: 12px;
+        background: $text;
+        overflow: hidden;
+    }
+
+    &__slide-rating {
+    }
+
+    &__slide-start {
+    }
+
+    &__slide-num {
+    }
+
+    &__slide-image {
+        height: 178px;
+        width: 100%;
+        background: url(/img/soon-image-01.jpeg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-bottom: 10px;
+    }
+
+    &__slide-block {
+        margin-left: 8px;
+    }
+
+    &__slide-heading {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 18px;
+        color: $main-color;
+        margin-bottom: 2px;
+    }
+
+    &__slide-genre {
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 13px;
+        color: $text-secondary;
+        margin-bottom: 10px;
+    }
+}
